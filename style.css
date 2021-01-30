@@ -21,6 +21,12 @@ p {
   text-align: left;
   margin: 0px;
   color: #ecf0c1	;
+  
+}
+.text-p{
+  line-height: 1.5;
+  font-size: 1.2em;
+  margin: 8px;
 }
 
 h1 {
@@ -57,6 +63,12 @@ h2, .h2 {
 #resultado-6{
     display: none;
 }
+#resultado-7{
+  display: none;
+}
+#resultado-8{
+  display: none;
+}
 .boton-resultados{
     color: #e39400;
     background: #16172d;
@@ -74,7 +86,6 @@ h2, .h2 {
     font-weight: 700;
     text-transform: uppercase;
     font-family: inherit;
-    
 }
 
 
@@ -89,23 +100,22 @@ h2, .h2 {
   padding: 15px;
 }
 .b-w-3 {
-    background: #00a3cc	;
-    box-shadow: -10rem 0 0 #00a3cc	, 10rem 0 0 #00a3cc	;
-    padding: 15px;
+  background: #00a3cc	;
+  box-shadow: -10rem 0 0 #00a3cc	, 10rem 0 0 #00a3cc	;
+  padding: 15px;
 
 }
 .b-w-4 {
-    background: #7a5ccc	;
-    box-shadow: -10rem 0 0 #7a5ccc	, 10rem 0 0 #7a5ccc	;
-    padding: 15px;
+  background: #7a5ccc	;
+  box-shadow: -10rem 0 0 #7a5ccc	, 10rem 0 0 #7a5ccc	;
+  padding: 15px;
   
 }
 .b-w-5 {
    
-    background: #e33400	;
-    box-shadow: -10rem 0 0 #e33400	, 10rem 0 0 #e33400	;
-    padding: 15px;
-  
+  background: #df5025	;
+  box-shadow: -10rem 0 0 #df5025	, 10rem 0 0 #df5025	;
+  padding: 15px;
 }
 .b-w-6 {
   background: #f2ce00	;
@@ -113,11 +123,69 @@ h2, .h2 {
   padding: 15px;
 }
 .b-w-7 {
-    background: #ce6f8f	;
-    box-shadow: -10rem 0 0 #ce6f8f	, 10rem 0 0 #ce6f8f	;
-    padding: 15px;
+  background: #ce6f8f	;
+  box-shadow: -10rem 0 0 #ce6f8f	, 10rem 0 0 #ce6f8f	;
+  padding: 15px;
+}
+.b-w-8 {
+  background: #5ccc96	;
+  box-shadow: -10rem 0 0 #5ccc96	, 10rem 0 0 #5ccc96	;
+  padding: 15px;;
+}
+.b-w-9 {
+  background: #00a3cc	;
+  box-shadow: -10rem 0 0 #00a3cc	, 10rem 0 0 #00a3cc	;
+  padding: 15px;
+}
+
+.button-hide{
+background: #16172d;
+	border-radius:6px;
+	border:1px solid #0a0000;
+	display:inline-block;
+	cursor:pointer;
+	color:#e39400;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:4px 12px;
+}
+.button-hide:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.button-hide:active {
+	position:relative;
+	top:1px;
+}
+#button-hide-1{
+  display: none;
+}
+#button-hide-2{
+  display: none;
+}
+#button-hide-3{
+  display: none;
+}
+#button-hide-4{
+  display: none;
+}
+#button-hide-5{
+  display: none;
+}
+#button-hide-6{
+  display: none;
+}
+#button-hide-7{
+  display: none;
+}
+#button-hide-8{
+  display: none;
+}
+
   
-  }
+  
+
 
 @media screen and (min-width: 430px) {
   .wrap {
@@ -135,10 +203,3 @@ h2, .h2 {
   font-size: 2em;
 }
 }
-
-
-  
-  
-
-
-  

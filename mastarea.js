@@ -112,12 +112,27 @@ const $boton3= document.getElementById("boton-resultados-3");
 const $boton4= document.getElementById("boton-resultados-4");
 const $boton5= document.getElementById("boton-resultados-5");
 const $boton6= document.getElementById("boton-resultados-6");
+const $boton7= document.getElementById("boton-resultados-7");
+const $boton8= document.getElementById("boton-resultados-8");
+
+const $botonHide1 = document.getElementById("button-hide-1");
+const $botonHide2 = document.getElementById("button-hide-2");
+const $botonHide3 = document.getElementById("button-hide-3");
+const $botonHide4 = document.getElementById("button-hide-4");
+const $botonHide5 = document.getElementById("button-hide-5");
+const $botonHide6 = document.getElementById("button-hide-6");
+const $botonHide7 = document.getElementById("button-hide-7");
+const $botonHide8 = document.getElementById("button-hide-8");
+
+
 let $resultado1 =document.getElementById("resultado-1");
 let $resultado2 =document.getElementById("resultado-2");
 let $resultado3 =document.getElementById("resultado-3");
 let $resultado4 =document.getElementById("resultado-4");
 let $resultado5 =document.getElementById("resultado-5");
 let $resultado6 =document.getElementById("resultado-6");
+let $resultado7 =document.getElementById("resultado-7");
+let $resultado8 =document.getElementById("resultado-8");
 
 $boton1.addEventListener("click",mostrarRespuesta);
 $boton2.addEventListener("click",mostrarRespuesta2);
@@ -125,30 +140,110 @@ $boton3.addEventListener("click",mostrarRespuesta3);
 $boton4.addEventListener("click",mostrarRespuesta4);
 $boton5.addEventListener("click",mostrarRespuesta5);
 $boton6.addEventListener("click",mostrarRespuesta6);
+$boton7.addEventListener("click",mostrarRespuesta7);
+$boton8.addEventListener("click",mostrarRespuesta8);
+
+$botonHide1.addEventListener("click",ocultarRespuesta);
+$botonHide2.addEventListener("click",ocultarRespuesta2);
+$botonHide3.addEventListener("click",ocultarRespuesta3);
+$botonHide4.addEventListener("click",ocultarRespuesta4);
+$botonHide5.addEventListener("click",ocultarRespuesta5);
+$botonHide6.addEventListener("click",ocultarRespuesta6);
+$botonHide7.addEventListener("click",ocultarRespuesta7);
+$botonHide8.addEventListener("click",ocultarRespuesta8);
+
+
 
 function mostrarRespuesta(){
+    $botonHide1.style.display ="unset";
     $boton1.style.display = "none";
     $resultado1.style.display = "flex";
 }
 function mostrarRespuesta2(){
+    $botonHide2.style.display ="unset";
     $boton2.style.display = "none";
     $resultado2.style.display = "flex";
 }
 function mostrarRespuesta3(){
+    $botonHide3.style.display ="unset";
     $boton3.style.display = "none";
     $resultado3.style.display = "flex";
 }
 function mostrarRespuesta4(){
+    $botonHide4.style.display ="unset";
     $boton4.style.display = "none";
     $resultado4.style.display = "flex";
 }
 function mostrarRespuesta5(){
+    $botonHide5.style.display ="unset";
     $boton5.style.display = "none";
     $resultado5.style.display = "flex";
 }
 function mostrarRespuesta6(){
+    $botonHide6.style.display ="unset";
     $boton6.style.display = "none";
     $resultado6.style.display = "flex";
+}
+function mostrarRespuesta7(){
+    $botonHide7.style.display ="unset";
+    $boton7.style.display = "none";
+    $resultado7.style.display = "flex";
+}
+function mostrarRespuesta8(){
+    $botonHide8.style.display ="unset";
+    $boton8.style.display = "none";
+    $resultado8.style.display = "flex";
+}
+
+
+
+function ocultarRespuesta(){
+    $botonHide1.style.display = "none";
+    $resultado1.style.display = "none";
+    $boton1.style.display = "";
+
+}
+function ocultarRespuesta2(){
+    $botonHide2.style.display = "none";
+    $resultado2.style.display = "none";
+    $boton2.style.display = "";
+
+}
+function ocultarRespuesta3(){
+    $botonHide3.style.display = "none";
+    $resultado3.style.display = "none";
+    $boton3.style.display = "";
+
+}
+function ocultarRespuesta4(){
+    $botonHide4.style.display = "none";
+    $resultado4.style.display = "none";
+    $boton4.style.display = "";
+
+}
+function ocultarRespuesta5(){
+    $botonHide5.style.display = "none";
+    $resultado5.style.display = "none";
+    $boton5.style.display = "";
+
+}
+function ocultarRespuesta6(){
+    $botonHide6.style.display = "none";
+    $resultado6.style.display = "none";
+    $boton6.style.display = "";
+
+}
+function ocultarRespuesta7(){
+    $botonHide7.style.display = "none";
+    $resultado7.style.display = "none";
+    $boton7.style.display = "";
+
+}
+function ocultarRespuesta8(){
+    $botonHide8.style.display = "none";
+    $resultado8.style.display = "none";
+    $boton8.style.display = "";
+
 }
 // ___________________________________________________________________________________________________
 

@@ -18,18 +18,21 @@
           <h1>EJERCICIOS JAVASCRIPT</h1>
           <h2>Para reforzar conocimientos de las clases de /r argentinaprograma.</h2>
         </div>
-        <p>1) Programa una función que cuente el número de caracteres de una cadena de texto</p>
-        <p>Ejemplo: miFuncion("Hola Mundo") devolverá 10.</p>
+        <p class="text-p">1) Programa una función que cuente el número de caracteres de una cadena de texto</p>
+        <p class="text-p">Ejemplo: miFuncion("Hola Mundo") devolverá 10.</p>
         <div class="b-w b-w-2">
             <button class="boton-resultados" id="boton-resultados-1">Resultado</button>
             <pre class="resultados" id="resultado-1">
         function contarCaracteres(string){
-        return console.log(string.length)
+        console.log(string.length);
+        return string.length;
+
         }
         contarCaracteres("hola mundo");</pre>
+        <button class="button-hide" id="button-hide-1">Esconder</button>
         </div>
-        <p>2) Mismo ejercicio que el 1 solamente que hay que hacer que no se tome en cuenta el espacio (" ") como caracter.</p>
-        <p>Ejemplo: miFuncion("Hola Mundo") devolverá 9 (por que no toma en cuenta el espacio).</p>
+        <p class="text-p">2) Mismo ejercicio que el 1 solamente que hay que hacer que no se tome en cuenta el espacio (" ") como caracter.</p>
+        <p class="text-p">Ejemplo: miFuncion("Hola Mundo") devolverá 9 (por que no toma en cuenta el espacio).</p>
 
         <div class="b-w b-w-3">
             <button class="boton-resultados" id="boton-resultados-2">Resultado</button>
@@ -41,12 +44,15 @@
                 contador++;
             }
         }
-        return console.log(contador);
+        console.log(contador);
+        return contador;
         }
         contarCaracteresSinEspacio("hola mundo");</pre>
+        <button class="button-hide" id="button-hide-2">Esconder</button>
+
         </div>
-        <p>3) Programa una función que te devuelva el texto recortado según el número de caracteres indicados,</strong>.</p>
-        <p>EJ miFuncion("Hola Mundo", 4) devolverá "Hola".</strong>.</p>
+        <p class="text-p">3) Programa una función que te devuelva el texto recortado según el número de caracteres indicados,</strong>.</p>
+        <p class="text-p">EJ miFuncion("Hola Mundo", 4) devolverá "Hola".</strong>.</p>
         <div class="b-w b-w-4">
             <button class="boton-resultados" id="boton-resultados-3">Resultado</button>
             <pre class="resultados" id="resultado-3">
@@ -58,11 +64,14 @@
                 }
             }
         console.log(palabraRecortada);
+        return palabraRecortada;
         }
         recortarString("hola mundo", 7);
             </pre>
+            <button class="button-hide" id="button-hide-3">Esconder</button>
+
         </div>
-        <p>4) Mismo ejercicio que el 3 solamente que no importa cuantos espacios se coloquen delante la palabra, la funcion los va a ignorar , ademas de los espacios dentro del string ,que tambien seran ignorados,
+        <p class="text-p">4) Mismo ejercicio que el 3 solamente que no importa cuantos espacios se coloquen delante la palabra, la funcion los va a ignorar , ademas de los espacios dentro del string ,que tambien seran ignorados,
              empezara a contar desde la primera letra </p>
         <pre id="tiene-que-espacios">Ej: miFuncion("        Hola Mundo"     , 4) devolverá "Hola". </pre>
         <div class="b-w b-w-5">
@@ -85,12 +94,15 @@
                 }
             }    
         console.log(palabraRecortada);
+        return palabraRecortada;
         }
         recortarStringSinEspacios("     hola mundo", 5);
         </pre>
+        <button class="button-hide" id="button-hide-4">Esconder</button>
+
         </div>
-        <p>5) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter</p>
-        <p>Ej miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].</p>
+        <p class="text-p">5) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter</p>
+        <p class="text-p">Ej miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].</p>
         <div class="b-w b-w-6">
             <button class="boton-resultados" id="boton-resultados-5">Resultado</button>
             <pre class="resultados" id="resultado-5">
@@ -107,13 +119,16 @@
                     palabra=string[i];
                 }
             }
-        return console.log(array);
+        console.log(array);
+        return array;
         }
         stringToArray("Hola que tal como andas todo bien ");
         </pre>
+        <button class="button-hide" id="button-hide-5">Esconder</button>
+
         </div>
-        <p>6) Programa una función que repita un texto X veces</p>
-        <p> EJ miFuncion('Hola Mundo', 3) 
+        <p class="text-p">6) Programa una función que repita un texto X veces</p>
+        <p class="text-p"> EJ miFuncion('Hola Mundo', 3) 
              devolverá Hola Mundo Hola Mundo Hola Mundo.</p>
         <div class="b-w b-w-7">
             <button class="boton-resultados" id="boton-resultados-6">Resultado</button>
@@ -124,10 +139,58 @@
         console.log(string);
         string = string + " ";
         string= string.trim()
-        return console.log(string);
+        console.log(string);
+        return string;
         }
         repiteTextoXVeces("hola mundo",16);
             </pre>
+            <button class="button-hide" id="button-hide-6">Esconder</button>
+
+        </div>
+        <p class="text-p">7) Programa una función que invierta las palabras de una cadena de texto</p>
+        <p class="text-p"> EJ miFuncion("Hola Mundo") devolverá "odnuM aloH".</p>
+        <div class="b-w b-w-8">
+            <button class="boton-resultados" id="boton-resultados-7">Resultado</button>
+            <pre class="resultados" id="resultado-7">
+        function darVueltaPalabra(string){
+        let p = (string.length - 1 );           
+        let ultimaLetra= string[p];     
+            for(let i=(string.length - 2);i>=0;i--){
+                ultimaLetra += string[i];
+            }
+        console.log(ultimaLetra);
+        return ultimaLetra;
+                   
+        }
+        darVueltaPalabra("hola mundo como andan");
+            </pre>
+            <button class="button-hide" id="button-hide-7">Esconder</button>
+
+        </div>
+        <p class="text-p">8) Programa una función para contar el número de veces que se repite una palabra en un texto largo </p>
+        <p class="text-p"> EJ  miFuncion("hola mundo adios mundo", "mundo") devolverá 2.</p>
+        <div class="b-w b-w-9">
+            <button class="boton-resultados" id="boton-resultados-8">Resultado</button>
+            <pre class="resultados" id="resultado-8">
+        function contarPalabrasRepetidas(string,string2){
+        let contador =0;              
+        stringSeparado = string.split(' ');
+        console.log(stringSeparado);
+            for (let i=0;i < stringSeparado.length;i++){
+                console.log(stringSeparado[i]);
+                if (stringSeparado[i] === string2){
+                    contador++;
+                }
+            }
+        let palabra = "La palabra que eligio se repite "+contador+" veces.";
+        console.log(palabra);
+        return palabra;
+                  
+        }
+        contarPalabrasRepetidas("hola mundo adios mundo que bello mundo te amo mundo", "mundo");
+            </pre>
+            <button class="button-hide" id="button-hide-8">Esconder</button>
+
         </div>
         <p>Creado por <a href="https://www.instagram.com/alejandro_capra/">@alejandro_capra</a>! </p> 
         <p><strong>En agradecimiento del curso de /r argentinaprograma </strong></p>

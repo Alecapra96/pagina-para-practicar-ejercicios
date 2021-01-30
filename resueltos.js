@@ -2,7 +2,8 @@
 // 1) Programa una función que cuente el número de caracteres de una cadena de texto,
 //  pe. miFuncion("Hola Mundo") devolverá 10. y otra donde no se cuente el espacio como caracter.
 function contarCaracteres(string){
-    return console.log(string.length)
+    return string.length
+    console.log(string.length)
 }
 contarCaracteres("hola mundo");
 
@@ -13,7 +14,8 @@ function contarCaracteresSinEspacio(string){
             contador++;
         }
     }
-    return console.log(contador);
+    console.log(contador);
+    return contador;
 }
 contarCaracteresSinEspacio("hola mundo");
 
@@ -30,6 +32,7 @@ function recortarString(string, number){
         }
     }
     console.log(palabraRecortada);
+    return palabraRecortada;
 }
 recortarString("hola mundo", 7);
 
@@ -50,6 +53,7 @@ function recortarStringSinEspacios(string, number){
         }
     }    
     console.log(palabraRecortada);
+    return palabraRecortada;
 }
 recortarStringSinEspacios("     hola mundo", 5);
 
@@ -70,7 +74,8 @@ for (let i=1;i<string.length;i++){
     palabra=string[i];
     }
 }
-return console.log(array);
+console.log(array);
+return array;
 }
 stringToArray("Hola que tal como andas todo bien ");
 
@@ -83,7 +88,8 @@ function repiteTextoXVeces(string,veces){
     console.log(string);
     string = string + " ";
     string= string.trim()
-     return console.log(string);
+    console.log(string);
+    return string;
 }
 repiteTextoXVeces("hola mundo",16);
 
@@ -96,7 +102,9 @@ function darVueltaPalabra(string){
     for(let i=(string.length - 2);i>=0;i--){
         ultimaLetra += string[i];
     }
-    return console.log(ultimaLetra);
+    console.log(ultimaLetra);
+    return ultimaLetra;
+   
 }
 darVueltaPalabra("hola mundo como andan");
 // 8) Programa una función para contar el número de veces que se repite una palabra en un texto largo,
@@ -113,6 +121,9 @@ function contarPalabrasRepetidas(string,string2){
             contador++;
         }
     }
-    return console.log("La palabra que eligio se repite "+contador+" veces.");
+    let palabra = "La palabra que eligio se repite "+contador+" veces.";
+    console.log(palabra);
+    return palabra;
+  
 }
 contarPalabrasRepetidas("hola mundo adios mundo que bello mundo te amo mundo", "mundo");
