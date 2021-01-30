@@ -127,3 +127,18 @@ function contarPalabrasRepetidas(string,string2){
   
 }
 contarPalabrasRepetidas("hola mundo adios mundo que bello mundo te amo mundo", "mundo");
+
+
+// 7) Programa una función que valide si una palabra o frase dada, es un palíndromo 
+// (que se lee igual en un sentido que en otro), pe. mifuncion("Salas") devolverá true.
+function validarPalindromo(string){
+    string=string.toLowerCase();
+    let resultado = string.split("").reverse().join("");
+   if (string === resultado){
+       return true;
+   }else{
+       return false;
+   }
+ }
+
+validarPalindromo("Menem");

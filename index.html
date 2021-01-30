@@ -192,6 +192,28 @@
             <button class="button-hide" id="button-hide-8">Esconder</button>
 
         </div>
+        
+        <p class="text-p">9) Programa una función que valide si una palabra o frase dada, es un palíndromo 
+            (que se lee igual en un sentido que en otro) </p>
+        <p class="text-p"> Ej. mifuncion("Salas") devolverá true.</p>
+        <div class="b-w b-w-10">
+            <button class="boton-resultados" id="boton-resultados-9">Resultado</button>
+            <pre class="resultados" id="resultado-9">
+        function validarPalindromo(string){
+        string=string.toLowerCase();
+        let resultado = string.split("").reverse().join("");
+        if (string === resultado){
+            return true;
+        }else{
+        return false;
+         }
+        }
+                
+        validarPalindromo("Menem");
+            </pre>
+            <button class="button-hide" id="button-hide-9">Esconder</button>
+
+        </div>
         <p>Creado por <a href="https://www.instagram.com/alejandro_capra/">@alejandro_capra</a>! </p> 
         <p><strong>En agradecimiento del curso de /r argentinaprograma </strong></p>
         <p class="h2">GRACIAS!</p>
@@ -199,3 +221,4 @@
 <script type="text/javascript" src="mastarea.js"></script>
 </body>
 </html>
+

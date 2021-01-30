@@ -114,6 +114,7 @@ const $boton5= document.getElementById("boton-resultados-5");
 const $boton6= document.getElementById("boton-resultados-6");
 const $boton7= document.getElementById("boton-resultados-7");
 const $boton8= document.getElementById("boton-resultados-8");
+const $boton9= document.getElementById("boton-resultados-9");
 
 const $botonHide1 = document.getElementById("button-hide-1");
 const $botonHide2 = document.getElementById("button-hide-2");
@@ -123,6 +124,7 @@ const $botonHide5 = document.getElementById("button-hide-5");
 const $botonHide6 = document.getElementById("button-hide-6");
 const $botonHide7 = document.getElementById("button-hide-7");
 const $botonHide8 = document.getElementById("button-hide-8");
+const $botonHide9 = document.getElementById("button-hide-9");
 
 
 let $resultado1 =document.getElementById("resultado-1");
@@ -133,6 +135,8 @@ let $resultado5 =document.getElementById("resultado-5");
 let $resultado6 =document.getElementById("resultado-6");
 let $resultado7 =document.getElementById("resultado-7");
 let $resultado8 =document.getElementById("resultado-8");
+let $resultado9 =document.getElementById("resultado-9");
+
 
 $boton1.addEventListener("click",mostrarRespuesta);
 $boton2.addEventListener("click",mostrarRespuesta2);
@@ -142,6 +146,8 @@ $boton5.addEventListener("click",mostrarRespuesta5);
 $boton6.addEventListener("click",mostrarRespuesta6);
 $boton7.addEventListener("click",mostrarRespuesta7);
 $boton8.addEventListener("click",mostrarRespuesta8);
+$boton9.addEventListener("click",mostrarRespuesta9);
+
 
 $botonHide1.addEventListener("click",ocultarRespuesta);
 $botonHide2.addEventListener("click",ocultarRespuesta2);
@@ -151,7 +157,7 @@ $botonHide5.addEventListener("click",ocultarRespuesta5);
 $botonHide6.addEventListener("click",ocultarRespuesta6);
 $botonHide7.addEventListener("click",ocultarRespuesta7);
 $botonHide8.addEventListener("click",ocultarRespuesta8);
-
+$botonHide9.addEventListener("click",ocultarRespuesta9);
 
 
 function mostrarRespuesta(){
@@ -193,6 +199,11 @@ function mostrarRespuesta8(){
     $botonHide8.style.display ="unset";
     $boton8.style.display = "none";
     $resultado8.style.display = "flex";
+}
+function mostrarRespuesta9(){
+    $botonHide9.style.display ="unset";
+    $boton9.style.display = "none";
+    $resultado9.style.display = "flex";
 }
 
 
@@ -243,9 +254,13 @@ function ocultarRespuesta8(){
     $botonHide8.style.display = "none";
     $resultado8.style.display = "none";
     $boton8.style.display = "";
-
+}
+function ocultarRespuesta9(){
+    $botonHide9.style.display = "none";
+    $resultado9.style.display = "none";
+    $boton9.style.display = "";
 }
 // ___________________________________________________________________________________________________
 
-// 7) Programa una función que valide si una palabra o frase dada, es un palíndromo 
-// (que se lee igual en un sentido que en otro), pe. mifuncion("Salas") devolverá true.
+
+

@@ -69,6 +69,10 @@ h2, .h2 {
 #resultado-8{
   display: none;
 }
+#resultado-9{
+  display: none;
+}
+
 .boton-resultados{
     color: #e39400;
     background: #16172d;
@@ -109,10 +113,8 @@ h2, .h2 {
   background: #7a5ccc	;
   box-shadow: -10rem 0 0 #7a5ccc	, 10rem 0 0 #7a5ccc	;
   padding: 15px;
-  
 }
-.b-w-5 {
-   
+.b-w-5 {  
   background: #df5025	;
   box-shadow: -10rem 0 0 #df5025	, 10rem 0 0 #df5025	;
   padding: 15px;
@@ -135,6 +137,11 @@ h2, .h2 {
 .b-w-9 {
   background: #00a3cc	;
   box-shadow: -10rem 0 0 #00a3cc	, 10rem 0 0 #00a3cc	;
+  padding: 15px;
+}
+.b-w-10 {
+  background: #7a5ccc	;
+  box-shadow: -10rem 0 0 #7a5ccc	, 10rem 0 0 #7a5ccc	;
   padding: 15px;
 }
 
@@ -182,7 +189,9 @@ background: #16172d;
 #button-hide-8{
   display: none;
 }
-
+#button-hide-9{
+  display: none;
+}
   
   
 
