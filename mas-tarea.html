@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=GFS+Didot">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200">
+     <link rel="stylesheet" href="style.css">
+
+  
+    <title>Mas tarea</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="b-w b-w-1">
+          <h1>EJERCICIOS JAVASCRIPT</h1>
+          <h2>Para reforzar conocimientos de las clases de /r argentinaprograma.</h2>
+        </div>
+        <p>1) Programa una función que cuente el número de caracteres de una cadena de texto</p>
+        <p>Ejemplo: miFuncion("Hola Mundo") devolverá 10.</p>
+        <div class="b-w b-w-2">
+            <button class="boton-resultados" id="boton-resultados-1">Resultado</button>
+            <pre class="resultados" id="resultado-1">
+        function contarCaracteres(string){
+        return console.log(string.length)
+        }
+        contarCaracteres("hola mundo");</pre>
+        </div>
+        <p>2) Mismo ejercicio que el 1 solamente que hay que hacer que no se tome en cuenta el espacio (" ") como caracter.</p>
+        <p>Ejemplo: miFuncion("Hola Mundo") devolverá 9 (por que no toma en cuenta el espacio).</p>
+
+        <div class="b-w b-w-3">
+            <button class="boton-resultados" id="boton-resultados-2">Resultado</button>
+        <pre class="resultados" id="resultado-2">
+        function contarCaracteresSinEspacio(string){
+        let contador = 0 ;
+        for (i=0; i < string.length;i++){
+            if(string[i] != " "){
+                contador++;
+            }
+        }
+        return console.log(contador);
+        }
+        contarCaracteresSinEspacio("hola mundo");</pre>
+        </div>
+        <p>3) Programa una función que te devuelva el texto recortado según el número de caracteres indicados,</strong>.</p>
+        <p>EJ miFuncion("Hola Mundo", 4) devolverá "Hola".</strong>.</p>
+        <div class="b-w b-w-4">
+            <button class="boton-resultados" id="boton-resultados-3">Resultado</button>
+            <pre class="resultados" id="resultado-3">
+        function recortarString(string, number){
+        let palabraRecortada = string[0];
+            for (i=1;i < string.length;i++){
+                if (number >= i){
+                    palabraRecortada += string[i];
+                }
+            }
+        console.log(palabraRecortada);
+        }
+        recortarString("hola mundo", 7);
+            </pre>
+        </div>
+        <p>4) Mismo ejercicio que el 3 solamente que no importa cuantos espacios se coloquen delante la palabra, la funcion los va a ignorar , ademas de los espacios dentro del string ,que tambien seran ignorados,
+             empezara a contar desde la primera letra </p>
+        <pre id="tiene-que-espacios">Ej: miFuncion("        Hola Mundo"     , 4) devolverá "Hola". </pre>
+        <div class="b-w b-w-5">
+            <button class="boton-resultados" id="boton-resultados-4">Resultado</button>
+            <pre class="resultados" id="resultado-4">
+        function recortarStringSinEspacios(string, number){
+        let i2;
+            for(let i=0;i < string.length;i++){
+                if (string[i] != " "){
+                    i2 = i;
+                    break;
+                }
+            }
+        let number2 = number + i2;
+        let i3 = i2++
+        let palabraRecortada= string[i3]
+            for(i2;i2 < string.length;i2++){
+                if (number2 >= i2){
+                    palabraRecortada += string[i2];
+                }
+            }    
+        console.log(palabraRecortada);
+        }
+        recortarStringSinEspacios("     hola mundo", 5);
+        </pre>
+        </div>
+        <p>5) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter</p>
+        <p>Ej miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].</p>
+        <div class="b-w b-w-6">
+            <button class="boton-resultados" id="boton-resultados-5">Resultado</button>
+            <pre class="resultados" id="resultado-5">
+        function stringToArray(string){
+        let array =[];
+        let palabra= string[0];
+            for (let i=1;i < string.length;i++){
+                if(string[i] != " "){
+                    palabra += string[i];
+                }
+                if (string[i] === " "){
+                    array.push(palabra);
+                    i+=1;      
+                    palabra=string[i];
+                }
+            }
+        return console.log(array);
+        }
+        stringToArray("Hola que tal como andas todo bien ");
+        </pre>
+        </div>
+        <p>6) Programa una función que repita un texto X veces</p>
+        <p> EJ miFuncion('Hola Mundo', 3) 
+             devolverá Hola Mundo Hola Mundo Hola Mundo.</p>
+        <div class="b-w b-w-7">
+            <button class="boton-resultados" id="boton-resultados-6">Resultado</button>
+            <pre class="resultados" id="resultado-6">
+        function repiteTextoXVeces(string,veces){
+        string = string + " ";
+        string= string.repeat(veces);
+        console.log(string);
+        string = string + " ";
+        string= string.trim()
+        return console.log(string);
+        }
+        repiteTextoXVeces("hola mundo",16);
+            </pre>
+        </div>
+        <p>Creado por <a href="https://www.instagram.com/alejandro_capra/">@alejandro_capra</a>! </p> 
+        <p><strong>En agradecimiento del curso de /r argentinaprograma </strong></p>
+        <p class="h2">GRACIAS!</p>
+      </div>
+<script type="text/javascript" src="mastarea.js"></script>
+</body>
+</html>

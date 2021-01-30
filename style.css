@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+* {box-sizing: border-box;}
+
+body {
+  font-family: "Droid Sans", sans-serif;
+  text-align: center;
+  background: #1b1c36	;
+}
+h1, h2, .h2 {
+  font-family: Oswald, sans-serif;
+}
+#tiene-que-espacios{
+    text-align: left;
+    font-size: 1.2em;
+    color: #ecf0c1	;
+    font-family: "Droid Sans", sans-serif;
+}
+p {
+  text-align: left;
+  margin: 0px;
+  color: #ecf0c1	;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2, .h2 {
+  font-size: 1.5em;
+}
+.wrap {
+  margin: 0em auto;
+}
+.resultados{
+    color: #16172d	;
+    text-align: left;
+    color: #16172d;
+    font-size: 1.3em;
+}
+#resultado-1{
+    display: none;
+}
+#resultado-2{
+    display: none;
+}
+#resultado-3{
+    display: none;
+}
+#resultado-4{
+    display: none;
+}
+#resultado-5{
+    display: none;
+}
+#resultado-6{
+    display: none;
+}
+.boton-resultados{
+    color: #e39400;
+    background: #16172d;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: #000000;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: inherit;
+    
+}
+
+
+.b-w-1 {
+  background: #16172d			;
+  box-shadow: -10rem 0 0 #16172d	, 10rem 0 0 #16172d	;
+  color: #e39400	;
+}
+.b-w-2 {
+  background: #5ccc96	;
+  box-shadow: -10rem 0 0 #5ccc96	, 10rem 0 0 #5ccc96	;
+  padding: 15px;
+}
+.b-w-3 {
+    background: #00a3cc	;
+    box-shadow: -10rem 0 0 #00a3cc	, 10rem 0 0 #00a3cc	;
+    padding: 15px;
+
+}
+.b-w-4 {
+    background: #7a5ccc	;
+    box-shadow: -10rem 0 0 #7a5ccc	, 10rem 0 0 #7a5ccc	;
+    padding: 15px;
+  
+}
+.b-w-5 {
+   
+    background: #e33400	;
+    box-shadow: -10rem 0 0 #e33400	, 10rem 0 0 #e33400	;
+    padding: 15px;
+  
+}
+.b-w-6 {
+  background: #f2ce00	;
+  box-shadow: -10rem 0 0 #f2ce00	, 10rem 0 0 #f2ce00	;
+  padding: 15px;
+}
+.b-w-7 {
+    background: #ce6f8f	;
+    box-shadow: -10rem 0 0 #ce6f8f	, 10rem 0 0 #ce6f8f	;
+    padding: 15px;
+  
+  }
+
+@media screen and (min-width: 430px) {
+  .wrap {
+    width: 80%;
+  }
+p {
+  line-height: 2;
+  font-size: 1.2em;
+}
+h1 {
+  font-size: 3em;
+}
+
+h2, .h2 {
+  font-size: 2em;
+}
+}
+
+
+  
+  
+
+
+  
