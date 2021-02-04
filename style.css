@@ -71,6 +71,8 @@ h2, .h2 {
 }
 #resultado-9{
   display: none;
+}#resultado-10{
+  display: none;
 }
 
 .boton-resultados{
@@ -144,6 +146,11 @@ h2, .h2 {
   box-shadow: -10rem 0 0 #7a5ccc	, 10rem 0 0 #7a5ccc	;
   padding: 15px;
 }
+.b-w-11{  
+  background: #df5025	;
+  box-shadow: -10rem 0 0 #df5025	, 10rem 0 0 #df5025	;
+  padding: 15px;
+}
 
 .button-hide{
 background: #16172d;
@@ -190,6 +197,9 @@ background: #16172d;
   display: none;
 }
 #button-hide-9{
+  display: none;
+}
+#button-hide-10{
   display: none;
 }
   

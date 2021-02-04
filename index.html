@@ -214,6 +214,41 @@
             <button class="button-hide" id="button-hide-9">Esconder</button>
 
         </div>
+        <p class="text-p">10) Inserta algo en un prompt , si es un string lo guarde en un array, si es par en otro y si es inpar en otro
+        <p class="text-p">Para que el programa termine insertar un 0.</p>
+        <div class="b-w b-w-11">
+            <button class="boton-resultados" id="boton-resultados-10">Resultado</button>
+            <pre class="resultados" id="resultado-10">
+        let userInput;
+        let string = [];
+        let pares = [];
+        let inpares = [];
+        alert("presiona 0 para salir");
+        while(userInput != 0 ){
+            userInput = prompt("Ingresa algo");
+            if (isNaN(userInput)===false){
+                if(Number(userInput) === 0){
+                    alert("FIN");
+                    break;
+                }else if (Number(userInput % 2=== 0)){
+                    pares.push(userInput);
+                }else{
+                    inpares.push(userInput);
+                }
+            }else{
+                string.push(userInput);
+            }
+        console.log("string");
+        console.log(string);
+        console.log("pares");
+        console.log(pares);
+        console.log("inpares");
+        console.log(inpares);
+        }
+            </pre>
+            <button class="button-hide" id="button-hide-10">Esconder</button>
+
+        </div>
         <p>Creado por <a href="https://www.instagram.com/alejandro_capra/">@alejandro_capra</a>! </p> 
         <p><strong>En agradecimiento del curso de /r argentinaprograma ,el discord Programadores y estudiantes y a  💙 Katie 💙 #5805 de por la ayuda.</strong></p>
         <p class="h2">GRACIAS!</p>

@@ -257,7 +257,7 @@
 //     $boton9.style.display = "";
 // }
 // ___________________________________________________________________________________________________
-const NUMBER_OF_RESULTS = 9;
+const NUMBER_OF_RESULTS = 10;
  
  
 const resultsElements = getResultsElements();
@@ -318,5 +318,6 @@ function numeroRamdon(){
 }
 console.log(numeroRamdon());
 
-// 0) Programa una función que reciba un número y evalúe si es capicúa o no (que se lee igual en un sentido que en otro),
+// 10) Programa una función que reciba un número y evalúe si es capicúa o no (que se lee igual en un sentido que en otro),
 //  pe. miFuncion(2002) devolverá true.
+
